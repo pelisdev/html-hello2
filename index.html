@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Formularios en Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <span class="navbar-text">
+                20/09/2023
+              </span>
+            </div>
+          </div>
+      </nav>
+
+
+      <div class="container-fluid w-50 p-3">
+        <div class="card">
+            <div class="card-header"><h2><b>Payment form example</b></h2></div>
+            <div class="card-body">
+
+              <div>
+                <div class="alert alert-danger" role="alert">
+                    Algunos campos faltan por completar
+                  </div>
+              </div>
+              <form>
+              <div class="d-flex">
+                <div class="d-flex flex-row mb-3">
+                    <div class="col-sm-7 p-3">  
+                        <label for="card" class="form-label">Tarjeta #</label>
+                        <input type="text" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXXXXXX">
+                      </div>
+                    <div class="col-sm-2 p-3">
+                        <label for="cvc" class="form-label">CVC #</label>
+                        <input type="text" class="form-control" id="cvc" placeholder="XXX"></div>
+                    <div class="col-sm-3 p-3">
+                        <label for="amount" class="form-label">Cantidad</label>
+                        <input type="text" class="form-control" id="amount" placeholder="XXXXXXXXXXXXXXXXXXXX"></div>
+                  </div>
+                  
+              </div>
+              <div class="d-flex flex-row mb-3">
+                <div class="col-6 p-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="">
+                    <label for="ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="ciudad" placeholder=""><br>
+                    <label for="cards" class="form-label">Aceptamos</label><br>
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="mastercard" autocomplete="off">
+                        <label class="btn btn-secondary" for="mastercard"><i class="fa-brands fa-cc-mastercard"></i></label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="visa" autocomplete="off">
+                        <label class="btn btn-secondary" for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="diners" autocomplete="off">
+                        <label class="btn btn-secondary" for="diners"><i class="fa-brands fa-cc-diners-club"></i></label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="amex" autocomplete="off">
+                        <label class="btn btn-secondary" for="amex"><i class="fa-brands fa-cc-amex"></i></label>
+                      </div>
+                      
+                </div>
+                <div class="col-6 p-3">
+                    <label for="apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos" placeholder="">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="municipios" class="form-label">Municipio</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">Elige un municipio</option>
+                            <option value="2">Alcalá de Henares</option>
+                            <option value="3">Alcobendas</option>
+                            <option value="4">Alcorcón</option>
+                            <option value="5">Aranjuez</option>
+                            <option value="6">Arganda del Rey</option>
+                            <option value="7">Boadilla del Monte</option>
+                            <option value="8">Collado Villalba</option>
+                            <option value="9">Colmenar Viejo</option>
+                            <option value="10">Coslada</option>
+                            <option value="11">Fuenlabrada</option>
+                            <option value="12">Getafe</option>
+                            <option value="13">Humanes de Madrid</option>
+                            <option value="14">Leganés</option>
+                            <option value="15">Majadahonda</option>
+                            <option value="16">Móstoles</option>
+                            <option value="17">Parla</option>
+                            <option value="18">Pinto</option>
+                            <option value="19">Pozuelo de Alarcón</option>
+                            <option value="20">Rivas-Vaciamadrid</option>
+                            <option value="21">Las Rozas de Madrid</option>
+                            <option value="22">San Fernando de Henares</option>
+                            <option value="23">San Lorenzo de El Escorial</option>
+                            <option value="24">San Sebastián de los Reyes</option>
+                            <option value="25">Torrejón de Ardoz</option>
+                            <option value="26">Tres Cantos</option>
+                            <option value="27">Valdemoro</option>
+                            <option value="28">Villanueva de la Cañada</option>
+                          </select></div>
+                    <div class="col-6">
+                        <label for="cp" class="form-label">Código Postal</label>
+                        <input type="text" class="form-control" id="cp" placeholder=""></div>
+                </div>
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" id="mensaje" rows="3"></textarea>
+                <p class="fs-8">Agrega cualquier nota aquí</p>
+                </div>
+              </div>
+            
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary">Cancelar</button>
+                    <button type="button" class="btn btn-primary" style="margin-left: 10px;">Enviar</button>
+                </div>
+            </form>
+              </div>
+          </div>
+      </div>
+
+      <script src="https://kit.fontawesome.com/d0eb872e65.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
